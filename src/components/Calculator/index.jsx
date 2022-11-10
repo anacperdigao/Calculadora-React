@@ -1,11 +1,13 @@
 import React from 'react'
 import './styles.css'
 import Button from '../Button'
+import Display from '../Display'
 
 const Calculadora = () => {
 
     return (
         <div className='Calculadora'>
+            <Display value={100} />
             <Button label="AC" />
             <Button label="/" />
             <Button label="7" />
