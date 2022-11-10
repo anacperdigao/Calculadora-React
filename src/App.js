@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
+import Calculadora from './components/Calculator';
 
 
 function App() {
   return (
     <div className="App">
-      <h1>Olá mundo!</h1>
+      <h1>Calculadora</h1>
+      <Calculadora />
     </div>
   );
 }
