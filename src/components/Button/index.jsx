@@ -1,10 +1,21 @@
 import React from 'react'
 import './styles.css'
 
-const Button = ({label}) => {
+const Button = ({label, operation, double, triple, clickButton}) => {
+
 
     return (
-        <button className='Button'>{label}</button>
+
+        <button 
+        onClick={() => clickButton(label)}
+        className={`
+            Button
+            ${operation && 'operation'}
+            ${double && 'double'}
+            ${triple && 'triple'}
+        `}>
+            {label}
+        </button>
     )
 }
 

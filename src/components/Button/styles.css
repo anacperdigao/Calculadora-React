@@ -12,3 +12,24 @@
     outline: none;
     cursor: pointer;
 }
+
+.Button:active {
+    background-color: #ccc;
+}
+
+.double {
+    grid-column: span 2;
+}
+
+.triple {
+    grid-column: span 3;
+}
+
+.operation {
+    background-color: #fa8231;
+    color: white;
+}
+
+.operation:active {
+    background-color: #fa8231cc;
+}
